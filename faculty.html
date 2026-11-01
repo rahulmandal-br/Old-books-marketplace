@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Old Books - BookLoop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">Book<span>Loop</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="academics.html">Browse Books</a></li>
+                <li><a href="faculty.html" class="active">Sell a Book</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h2 class="section-title">Upload Your Old Book Details</h2>
+        <div class="form-container">
+            <form action="#" method="POST" onsubmit="alert('Book Listed Successfully!'); return false;">
+                <div class="form-group">
+                    <label for="bookName">Book Title *</label>
+                    <input type="text" id="bookName" required placeholder="e.g. Core Java Volume 1">
+                </div>
+                <div class="form-group">
+                    <label for="author">Author Name</label>
+                    <input type="text" id="author" placeholder="e.g. Cay S. Horstmann">
+                </div>
+                <div class="form-group">
+                    <label for="price">Expected Price (₹) *</label>
+                    <input type="number" id="price" required placeholder="e.g. 200">
+                </div>
+                <div class="form-group">
+                    <label for="condition">Book Condition *</label>
+                    <select id="condition" required>
+                        <option value="">Select Condition</option>
+                        <option value="new">Like New (Unused)</option>
+                        <option value="good">Good (No torn pages)</option>
+                        <option value="fair">Fair (Readable, shows wear)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="desc">Additional Details / Description</label>
+                    <textarea id="desc" rows="4" placeholder="Mention if writing or highlighting is present..."></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%; border:none; cursor:pointer;">List Book for Sale</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 BookLoop Marketplace. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

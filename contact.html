@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BookLoop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">Book<span>Loop</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="academics.html">Browse Books</a></li>
+                <li><a href="faculty.html">Sell a Book</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h2 class="section-title">Contact Support</h2>
+        <div class="form-container">
+            <form action="#" method="POST" onsubmit="alert('Message Sent Successfully!'); return false;">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="msg">Message / Query</label>
+                    <textarea id="msg" rows="4" required placeholder="Type your query here..."></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%; border:none; cursor:pointer;">Send Message</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 BookLoop Marketplace. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
